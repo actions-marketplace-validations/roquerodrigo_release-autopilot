@@ -1,0 +1,16 @@
+name: Release Autopilot
+description: Semantic releases with notes written for the people who use the project.
+author: roquerodrigo
+
+branding:
+  icon: feather
+  color: purple
+
+runs:
+  using: composite
+  steps:
+    - name: Report that the action is not available yet
+      shell: bash
+      run: |
+        echo "::error::This version only reserves the name. The project is under development."
+        exit 1
